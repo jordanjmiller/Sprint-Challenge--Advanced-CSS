@@ -393,3 +393,20 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .newsletter {
+  margin-top: 20px;
+}
+.home .newsletter .firstdiv {
+  background-color: lightsteelblue;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1%;
+  border: 1px solid black;
+}
+.home .newsletter .signupform {
+  background-color: lightsteelblue;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid black;
+}
