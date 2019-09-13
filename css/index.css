@@ -1,3 +1,11 @@
+@keyframes flashy {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: orange;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,6 +168,71 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.nav div {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.nav div h1 {
+  font-size: 3.5rem;
+}
+@media (max-width: 500px) {
+  .nav div {
+    animation-name: flashy;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .nav div h1 {
+    font-size: 2.8rem;
+  }
+}
+.nav nav {
+  width: 48%;
+  margin: 0 auto;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: flex-end;
+}
+@media (max-width: 500px) {
+  .nav nav {
+    margin: 0 auto;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+.nav nav a {
+  width: 16%;
+  color: black;
+  font-size: 1.4rem;
+  text-align: center;
+  text-decoration: none;
+}
+.nav nav a:hover {
+  text-decoration: underline;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -175,6 +248,12 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro .headerimg {
+  padding-top: 12px;
+}
+.home .intro img {
+  border-radius: 5px;
 }
 .home .space-images {
   display: flex;
@@ -211,6 +290,22 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 29%;
+  background-color: black;
+  color: white;
+  padding: 2.5%;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.7rem;
+  text-align: center;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  border: 1px solid black;
 }
 .home .walk .walk-img {
   width: 46%;
