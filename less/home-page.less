@@ -77,10 +77,14 @@
     justify-content: center;
     @media @mobile{
       margin-top: 20px;
+      padding: 15px;
+      flex-direction: column-reverse;
     }
     .walk-text {
       width: 50%;
-
+      @media @mobile{
+        width:100%;
+      }
       h3 {
         margin-bottom: 10px;
       }
@@ -91,13 +95,21 @@
 
       .btn {
         .parabutton();
+        @media @mobile{
+        width: 100%;
+        padding: 6%;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @mobile{
+        width:100%;
+        margin: 0 auto;
+        padding-bottom: 15px;
+      }
       img {
         width: 100%;
         height: auto;
