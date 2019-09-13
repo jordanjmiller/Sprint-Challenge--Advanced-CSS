@@ -1,1 +1,24 @@
 // Mixins Here
+.parabutton(@width:29%, @bcolor:@btn-bg-color, @tcolor:white, @padding:2.5%, @radius:5px){
+    width: @width;
+    background-color: @bcolor;
+    color: @tcolor;
+    padding: @padding;
+    border-radius: @radius;
+    border: none;
+    font-size: 1.7rem;
+    text-align: center;
+
+    &:hover{
+    background-color: @tcolor;
+    color: @bcolor;
+    font-weight: bolder;
+    border: 1px solid @bcolor;
+    }
+}
+.flashybackground(@name:flashy, @speed:1s, @loops:infinite){
+    animation-name: @name;
+    animation-duration: @speed;
+    animation-iteration-count: @loops;
+    animation-direction: alternate;
+}

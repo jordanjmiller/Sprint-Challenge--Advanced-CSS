@@ -11,25 +11,55 @@
     p {
       padding:0 15px;
     }
-  
+    .headerimg{
+      padding-top: 12px;
+      @media @mobile{
+        padding-top: 0px;
+      }
+    }
+    img{
+      border-radius: 5px;
+      width:100%;
+    }
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 100%;
-
-    img {
+    div{
       width: 28%;
+      @media @mobile{
+      width:90%;
+      margin: 0 auto;
+      padding: 0;
+      }
+    }
+    img {
+      width: 100%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @mobile{
+        margin: 20px 0;
+        height: 90%;
+      }
+    }
+    .hide{
+      @media @mobile{
+      img {
+        display:none;
+      }
+    }
     }
   }
 
   .visit-planets {
     padding: 15px;
-
+    @media @mobile{
+      padding-bottom: 15px;
+    }
     h3 {
       margin-top: 11px;
     }
@@ -45,10 +75,16 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media @mobile{
+      margin-top: 20px;
+      padding: 15px;
+      flex-direction: column-reverse;
+    }
     .walk-text {
       width: 50%;
-
+      @media @mobile{
+        width:100%;
+      }
       h3 {
         margin-bottom: 10px;
       }
@@ -58,13 +94,22 @@
       }
 
       .btn {
+        .parabutton();
+        @media @mobile{
+        width: 100%;
+        padding: 6%;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @mobile{
+        width:100%;
+        margin: 0 auto;
+        padding-bottom: 15px;
+      }
       img {
         width: 100%;
         height: auto;
@@ -72,4 +117,27 @@
       }
     }
   }
+
+  .newsletter{
+    margin-top: 20px;
+    .firstdiv{
+      background-color: lightsteelblue;
+      width:90%;
+      margin: 0 auto;
+      padding: 1%;
+      border: 1px solid black;
+    }
+    .signupform{
+      background-color: lightsteelblue;
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid black;
+    }
+  }
+  // .aboutus-content{
+  //   background-image: url("../img/ganapathy-kumar-ve_uN9V8xqU-unsplash.jpg");
+  //   background-repeat: no-repeat;
+  //   background-size: 100% 100%;
+  // }
 }// home
