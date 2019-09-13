@@ -232,7 +232,7 @@ p {
 @media (max-width: 500px) {
   .nav nav {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     justify-content: space-between;
     align-items: center;
   }
@@ -249,7 +249,7 @@ p {
 }
 @media (max-width: 500px) {
   .nav nav a {
-    width: 18%;
+    width: 20%;
   }
 }
 footer {
