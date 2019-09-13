@@ -9,29 +9,24 @@
     //border: 10px solid black;
     @media @mobile{
     //background-color: pink;
+    .flashybackground();
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 12px;
+    position: sticky;
+    top: 0;
     }
 
     div{
         margin: 0 auto;
         margin-top: 10px;
         margin-bottom: 15px;
-        h1{
-            font-size: 3.5rem;
-        }
         //border: 1px solid red;
         @media @mobile{
-            .flashybackground();
-            width:50%;
-            margin: 0 auto;
-            margin-bottom: 12px;
+            width:100%;
+            margin: 12px auto 12px auto;
             text-align: center;
-            h1{
-                font-size: 2.8rem;
-                //font-weight: bold;
-            }
         }
     }
     nav {
@@ -46,8 +41,8 @@
         @media @mobile{
             margin: 0 auto;
             //background-color: lightgray;
-            width: 90%;
-            justify-content: space-evenly;
+            width: 80%;
+            justify-content: space-between;
             align-items: center;
         }
 
@@ -61,6 +56,9 @@
             //border: 1px solid red;
             &:hover{
                 text-decoration: underline;
+            }
+            @media @mobile{
+                width: 18%;
             }
         }
     }

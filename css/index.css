@@ -1,9 +1,9 @@
 @keyframes flashy {
   from {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.7);
   }
   to {
-    background-color: orange;
+    background-color: rgba(96, 149, 195, 0.5);
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -153,6 +153,9 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 3.5rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -168,6 +171,21 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container h1 {
+    font-size: 3.2rem;
+  }
+  .container h3 {
+    font-size: 2.2rem;
+  }
+  .container h3 {
+    font-size: 2.2rem;
+  }
+  .container p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
 .nav {
   max-width: 800px;
   width: 100%;
@@ -178,9 +196,16 @@ p {
 }
 @media (max-width: 500px) {
   .nav {
+    animation-name: flashy;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 12px;
+    position: sticky;
+    top: 0;
   }
 }
 .nav div {
@@ -188,22 +213,11 @@ p {
   margin-top: 10px;
   margin-bottom: 15px;
 }
-.nav div h1 {
-  font-size: 3.5rem;
-}
 @media (max-width: 500px) {
   .nav div {
-    animation-name: flashy;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    width: 50%;
-    margin: 0 auto;
-    margin-bottom: 12px;
+    width: 100%;
+    margin: 12px auto 12px auto;
     text-align: center;
-  }
-  .nav div h1 {
-    font-size: 2.8rem;
   }
 }
 .nav nav {
@@ -218,8 +232,8 @@ p {
 @media (max-width: 500px) {
   .nav nav {
     margin: 0 auto;
-    width: 90%;
-    justify-content: space-evenly;
+    width: 80%;
+    justify-content: space-between;
     align-items: center;
   }
 }
@@ -232,6 +246,11 @@ p {
 }
 .nav nav a:hover {
   text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .nav nav a {
+    width: 18%;
+  }
 }
 footer {
   color: #22283B;
@@ -252,22 +271,55 @@ footer {
 .home .intro .headerimg {
   padding-top: 12px;
 }
+@media (max-width: 500px) {
+  .home .intro .headerimg {
+    padding-top: 0px;
+  }
+}
 .home .intro img {
   border-radius: 5px;
+  width: 100%;
 }
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   width: 100%;
 }
-.home .space-images img {
+.home .space-images div {
   width: 28%;
+}
+@media (max-width: 500px) {
+  .home .space-images div {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+.home .space-images img {
+  width: 100%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images img {
+    margin: 20px 0;
+    height: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .hide img {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets {
+    padding-bottom: 15px;
+  }
 }
 .home .visit-planets h3 {
   margin-top: 11px;
@@ -281,6 +333,11 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    margin-top: 20px;
+  }
 }
 .home .walk .walk-text {
   width: 50%;
