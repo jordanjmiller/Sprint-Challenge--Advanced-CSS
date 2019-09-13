@@ -33,14 +33,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+An adaptive website will resize based on percentages, but a fully responsive site will change sizes and positioning of items based on breakpoints designed to match specific sizes/devices.
 
 2. Describe what it means to be mobile first vs desktop first.
+Mobile or desktop first is describing what the site is designed first/primarily for. Mobile will use min-width breakpoints and expand out to match larger sizes, desktop first will use max-width breakpoints and be designed to shrink down for smaller screens.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+This sets the font size default to 10 pixels, at which point the math for using rems is much easier and more clear- 16 pixels is 1.6rem, 20 pixels is 2rem.
 
 4. How would you describe preprocessing to someone new to CSS?
+Preprocessing allows provides more tools to the developer to make writing CSS faster and with less errors.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+Nesting! Right now having trouble with using mixins instead of typing the code out. For the size projects we are working with it feels faster to manually set everything.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -133,3 +138,5 @@ After finishing your required elements, you can push your work further. These go
 * [ ] Create a fixed navigation and add some opacity to the background
 
 * [ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
+
+Jordan Miller
